@@ -33,14 +33,18 @@
   flex-grow: 1;
 }
 
-.title a {
+.title a,
+.main a {
   color: #0070f3;
   text-decoration: none;
 }
 
 .title a:hover,
 .title a:focus,
-.title a:active {
+.title a:active,
+.main a:hover,
+.main a:focus,
+.main a:active {
   text-decoration: underline;
 }
 
