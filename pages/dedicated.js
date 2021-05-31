@@ -1,4 +1,5 @@
 import Head from "next/head";
+import InlineExample from "../components/InlineExample";
 
 export default function Dedicated() {
   return (
@@ -12,9 +13,8 @@ export default function Dedicated() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>Dedicated Example</h1>
-        {/* Add Canvas Here */}
+      <main style={{ width: "100vw", height: "100vh" }}>
+        <InlineExample />
       </main>
     </div>
   );

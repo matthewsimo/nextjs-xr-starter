@@ -1,0 +1,28 @@
+.sceneInfo {
+  z-index: 99;
+  border-radius: 8px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: aliceblue;
+  width: 250px;
+}
+
+.sceneInfo h3 {
+  margin: 0;
+}
+
+.sceneInfo dt {
+  display: inline;
+}
+
+.sceneInfo dd {
+  display: inline;
+  margin-left: 5px;
+}
+.sceneInfo dd:after {
+  display: block;
+  content: "";
+}
