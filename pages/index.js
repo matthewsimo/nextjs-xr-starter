@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import InlineExample from "../components/InlineExample";
@@ -23,7 +22,9 @@ export default function Home() {
         </p>
         <div>
           <h2>Inline Example</h2>
-          <InlineExample />
+          <div style={{ height: 400, width: 600 }}>
+            <InlineExample />
+          </div>
         </div>
 
         <div>
