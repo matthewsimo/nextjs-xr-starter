@@ -33,7 +33,7 @@ function RotationGroup(props) {
 
 export default function InlineExample(props) {
   return (
-    <Canvas>
+    <Canvas onCreated={(state) => state.gl.setClearColor("white")}>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <RotationGroup position={[0, 0, 0]}>
