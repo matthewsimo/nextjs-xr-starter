@@ -5,9 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -35,6 +33,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Check it out on your headset locally
 
-You'll need to generate certs and put them in the `certs` directory. Run `./gen-local-ssl-cert` then follow the "Add your Cert to Keychain" outlined in https://medium.com/responsetap-engineering/nextjs-https-for-a-local-dev-server-98bb441eabd7#bd85
+Because WebXR APIs require `https`, you'll need to generate certs and put them in the `certs` directory. Run `./gen-local-ssl-cert` then follow the "Add your Cert to Keychain" outlined in https://medium.com/responsetap-engineering/nextjs-https-for-a-local-dev-server-98bb441eabd7#bd85
 
-With that done, (and your HMD & host on same network) run `npm start` and load https://[your-local-ip]:3000 in headset
+With that done, (and your HMD & host on same network) run `pnpm dev:https` and load https://[your-local-ip]:3000 in headset
