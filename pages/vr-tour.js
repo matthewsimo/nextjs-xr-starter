@@ -7,11 +7,13 @@ import { useFrame } from "@react-three/fiber";
 import { Text } from "@react-three/drei";
 import { useXREvent } from "@react-three/xr";
 
-const VRCanvas = dynamic(() =>
-  import("@react-three/xr").then((mod) => mod.VRCanvas)
+const VRCanvas = dynamic(
+  () => import("@react-three/xr").then((mod) => mod.VRCanvas),
+  { ssr: false }
 );
-const DefaultXRControllers = dynamic(() =>
-  import("@react-three/xr").then((mod) => mod.DefaultXRControllers)
+const DefaultXRControllers = dynamic(
+  () => import("@react-three/xr").then((mod) => mod.DefaultXRControllers),
+  { ssr: false }
 );
 
 const SceneInfoText = (props) => (
